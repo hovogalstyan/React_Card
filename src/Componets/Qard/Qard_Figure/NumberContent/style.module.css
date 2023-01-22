@@ -1,0 +1,16 @@
+.Num_Content{
+    width: 100%;
+    padding: 0 0.7rem;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-7px);
+}
+.Num_Content .Contexst{
+    margin: 0 0.5rem;
+}
+.Num_Content .Contexst span{
+     color: white;
+     margin: 0 0.2rem;
+     font-size: 20px;
+    font-family: 'Glegoo',sans-serif;
+}

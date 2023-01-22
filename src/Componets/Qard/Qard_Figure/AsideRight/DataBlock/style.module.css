@@ -1,0 +1,13 @@
+.Data_Block{
+    width: 70px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+.Data_Block small{
+    color: white;
+}
+
+.Data_Block div span{
+    color: white;
+}

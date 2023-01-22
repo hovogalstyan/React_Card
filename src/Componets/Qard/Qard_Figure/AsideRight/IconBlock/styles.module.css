@@ -1,0 +1,18 @@
+.IconBlock{
+    width: 100%;
+    padding: 0.2rem 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.IconBlock div{
+    color: white;
+    font-size: 45px;
+    margin-left: 45px;
+}
+.IconBlock p{
+    color: white;
+    transform: rotate(85deg);
+    margin-right: 45px;
+    font-size: 40px;
+}

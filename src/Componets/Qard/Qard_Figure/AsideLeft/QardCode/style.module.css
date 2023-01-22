@@ -1,0 +1,39 @@
+.Container_Card{
+    width: 100%;
+    height: 50px;
+    margin: 0.7rem auto;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.CardCoe{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 0;
+}
+.CardCoe:before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #19dcea;
+    top: 0;
+    right: 0;
+}
+.CardCoe span{
+    width: 100%;
+    height: 1px;
+    background: #19dcea;
+    margin: 0.2rem 0;
+}
+
+.Container_Card div{
+    display: flex;
+    margin: 0 auto;
+}
+.Container_Card div p{
+    margin: 0 0.2rem;
+}

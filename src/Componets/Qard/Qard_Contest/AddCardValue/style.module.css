@@ -1,0 +1,443 @@
+.AddCardValue{
+    width:  400px;
+    height: 100%;
+    padding: 8rem 0;
+    margin: 0 auto;
+}
+.AddCardValue .qardNumber{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border: 1px solid rgba(128,781,1258,12);
+    border-radius: 20px;
+    display: flex;
+
+}
+.AddCardValue .qardNumber div{
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    border: 1px solid #ffffff;
+    right: 25px;
+    top: 4px;
+    animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both infinite;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 900;
+}
+.AddCardValue .qardNumber fieldset{
+  opacity: 0;
+}
+.AddCardValue .qardNumber input{
+  opacity: 0;
+}
+.AddCardValue .qardNumber span{
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    font-size: 22px;
+    color: white;
+}
+
+.active {
+    width: 100%;
+    position: relative;
+    height: 40px;
+}
+.active fieldset{
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    height: 40px;
+    z-index: 0;
+    border-color: #f5be10;
+}
+.active fieldset legend{
+    color: #f5be10;
+    font-size: 12px;
+    font-family: 'Dancing Script', sans-serif;
+}
+.active  input{
+    width: 70%;
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    padding: 0 5.5rem;
+    color: white;
+}
+.active div{
+    opacity: 0;
+}
+.active  input:focus{
+    border-color: gold;
+}
+.active span{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 23px;
+    color: #f5be10;
+}
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+.Cont_row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.8rem 0.8rem;
+}
+.Cont_row div{
+    width: calc(100% / 3 - 2px);
+    border: 1px solid #ffffff;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.Cont_row div fieldset{
+     opacity: 0;
+
+}
+.Cont_row div input{
+    opacity: 0;
+}
+.Cont_row div span{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: max-content;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 900;
+    animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both ;
+}
+@keyframes tracking-in-expand-fwd-top {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateZ(-700px) translateY(-500px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+.AddCardValue button{
+    display: block;
+    margin: 0 auto;
+    padding: 9px 70px;
+    background: linear-gradient(transparent,black,transparent);
+    border: 1px solid #f5be10;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: bounce-right 1.2s both;
+
+}
+.AddCardValue button small{
+    text-transform: uppercase;
+    color: #f5be10;
+    font-size: 16px;
+    font-family: 'Dancing Script', sans-serif;
+    letter-spacing: 1em;
+    font-weight: 900;
+}
+.AddCardValue button:hover  small{
+    animation: text-flicker-in-glow 4s linear both;
+    color: white;
+}
+@keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes bounce-right {
+    0% {
+        transform: translateX(48px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(26px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateX(13px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateX(6.5px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateX(4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+.Cont_row .activeMonht{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    overflow: unset;
+}
+.Cont_row  .activeMonht span{
+   display: none;
+
+}
+.Cont_row .activeMonht input {
+     opacity: 1;
+     position: absolute;
+     width: 100%;
+     background: none;
+     border: none;
+     outline: none;
+     padding:  0 3.3rem;
+     color: white;
+}
+.Cont_row .activeMonht fieldset{
+    opacity: 1;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    top: -7px;border-color: #f5be10;
+}
+.Cont_row .activeMonht fieldset legend{
+    font-size: 12px;
+    color: #f5be10;
+    font-family: 'Dancing Script', sans-serif;
+}
+.Cont_row .activeYear{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    overflow: unset;
+}
+.Cont_row  .activeYear span{
+    display: none;
+
+}
+.Cont_row .activeYear input {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding:  0 3.3rem;
+    color: white;
+}
+.Cont_row .activeYear fieldset{
+    opacity: 1;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    top: -7px;border-color: #f5be10;
+}
+.Cont_row .activeYear fieldset legend{
+    font-size: 12px;
+    color: #f5be10;
+    font-family: 'Dancing Script', sans-serif;
+}
+.Cont_row .activeCode{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    overflow: unset;
+}
+.Cont_row  .activeCode span{
+    display: none;
+
+}
+.Cont_row .activeCode input {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding:  0 3.2rem;
+    color: white;
+}
+.Cont_row .activeCode fieldset{
+    opacity: 1;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    top: -7px;border-color: #f5be10;
+}
+.Cont_row .activeCode fieldset legend{
+    font-size: 12px;
+    color: #f5be10;
+    font-family: 'Dancing Script', sans-serif;
+}
